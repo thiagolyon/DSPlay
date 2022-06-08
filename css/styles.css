@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --color-green: #38AF90;
+    --color-white: #FFF;
+    --color-drak-grey: #797979;
+    --color-light-gray: #F0F0F0;
+    --color-pink: #DD7E92;
+    --color-input: #C4C4C4;
+    --color-black: #383838;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+a, a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: var(--color-input);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    background-color: var(--color-green);
+    width: 100%;
+    height: 90px;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.nav-main img {
+    margin-top: 5px;
+    width: 62px;
+}
+
+.nav-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 30px 0;
+}
+
+.head-other {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.head-news {
+    margin-right: 29px;
+}
+
+.head-games {
+    margin-right: 29px;
+
+}
+
+.head-subs {
+    margin-right: 29px;
+}
+
+#news {
+    margin: 40px 10px 12px 10px;
+}
+
+.news-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-drak-grey);
+    margin: 40px 0 8px 0;
+}
+
+.main-news {
+    background-color: var(--color-light-gray);
+    padding: 16px 12px 0 12px;
+    border-radius: 8px;
+}
+
+.other-p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: var(--color-drak-grey);
+}
+
+.main-news h2 {
+    color: var(--color-green);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.line {
+    border: 1px solid var(--color-green);
+    margin-bottom: 1px;
+}
+
+.date {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--color-green);
+    margin-bottom: 12px;
+}
+
+.main-news p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.read-more {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-pink);
+    padding-bottom: 12px;
+}
+
+.botton {
+    margin-top: 28px;
+    width: 244px;
+    height: 67px;
+    background-color: var(--color-pink);
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.load-more {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 55px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+#games {
+    background-color: var(--color-light-gray);
+    width: 100%;
+    padding-top: 40px;
+}
+
+.portfolio-title {
+    margin: 0;
+    padding-bottom: 16px;
+    color: var(--color-green);
+    text-align: center;
+}
+
+.games-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#games img {
+    width: 300px;
+    height: 168px;
+    border-radius: 8px 8px 0 0;
+}
+
+.games {
+    background-color: var(--color-white);
+    margin: 14px 10px;
+    border-radius: 8px;
+}
+
+.games h3 {
+    font-size: 18px;
+    color: var(--color-drak-grey);
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+
+.games span {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--color-green);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.games p {
+    display: flex;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.game-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-green);
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.more-height {
+    width: 26px;
+    height: 26px;
+}
+
+.subs-title {
+    font-size: 24px;
+    color: var(--color-drak-grey);
+    text-align: center;
+}
+
+.subs-container {
+    background-color: var(--color-light-gray);
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+.label-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+    margin-bottom: 20px;
+}
+
+.label-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+.subs-input {
+    width: 280px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 13px 22px;
+}
+
+.label-title {
+    display: flex;
+    font-size: 16px;
+    color: var(--color-drak-grey);
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.console {
+    margin-left: 10px;
+    font-size: 16px;
+    color: var(--color-drak-grey);
+}
+
+.label-PS {
+    margin-bottom: 45px;
+}
+
+.to-receive {
+    margin-bottom: 47px;
+}
+
+.label-botton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botton-submit {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 700;
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    border: 0;
+    margin-bottom: 20px;
+    border: 2px solid var(--color-pink)
+}
+
+.botton-reset {
+    background-color: var(--color-white);
+    color: var(--color-pink);
+    font-size: 18px;
+    font-weight: 700;
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    border: 2px solid var(--color-pink);
+    margin-bottom: 33px;
+}
+
+footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+.foot-geral {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social-media {
+    margin-top: 28px;
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media p {
+    margin: 0;
+}
+
+.rights {
+    margin-top: 37px;
+    text-align: center;
+}
+
+.rights p {
+    margin: 0;
+}
+
+.privacy {
+    margin-top: 37px;
+    text-align: center;
+}
+
+.privacy p {
+    margin: 0;
+}
+
+
+@media(max-width: 600px) {
+    .head-other {
+        font-size: 0;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .nav-brand {
+        font-size: 24px;
+    }
+
+    .news-title {
+        font-size: 36px;
+    }
+
+    .main-news h2 {
+        font-size: 24px;
+    }
+
+    .other-p {
+        font-size: 16px;
+    }
+
+    .portfolio-title {
+        font-size: 36px;
+    }
+
+    .subs-input {
+        width: 642px;
+    }
+
+    .console, .label-title {
+        margin-left: 145px;
+    }
+
+    .label-botton {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .botton-submit {
+        margin-right: 50px;
+    }
+
+    .foot-geral {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 190px;
+    }
+
+    .social-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rights {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .privacy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
